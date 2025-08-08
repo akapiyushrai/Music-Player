@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/73a22996a0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+
+    <div class="container">
+
+        <div class="music-player">
+            <nav>
+
+                <div class="circle">
+                    <i class="fa-solid fa-angle-left"></i>
+                </div>
+                  <div class="circle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                 
+            </nav>
+
+            <img src="media/love-quinn-f.jpg" class="song-img">
+            <h1>Admirin' You</h1>
+            <p> (Best Part)</p>
+
+            <audio  id="song">
+                <source src="media/love-quinn-final.mp3" type="audio/mpeg">
+            </audio>
+
+            <input type="range" value="0" id="progress">
+
+            <div class="controls">
+                <div><i class="fa-solid fa-backward"></i></div>
+                <div id="playpause"><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
+                <div><i class="fa-solid fa-forward"></i></div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
